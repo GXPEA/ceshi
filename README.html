@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>答案之书</title>
+    <title>朱海雷兹</title>
     <style>
         body {
             margin: 0;
@@ -17,11 +17,11 @@
             width: 380px;
             height: 700px;
             position: relative;
-            background-image: url('https://img.alicdn.com/imgextra/i3/O1CN01FSw38T1Ne6L2mg3Mb_!!6000000001594-2-tps-936-1200.png');
+            background-image: url('https://img.moegirl.org.cn/common/thumb/d/d1/VALORANT_Raze.png/420px-VALORANT_Raze.png');
             background-size: cover;
             background-position: center;
         }
-        .answer-container {
+        .raze-container {
             position: absolute;
             top: 44px;
             left: 32px;
@@ -34,7 +34,7 @@
             line-height: 65px;
             overflow: hidden;
         }
-        .explanation {
+        .praise {
             position: absolute;
             top: 256px; /* 44 + 190 + 22 */
             left: 32px;
@@ -63,46 +63,46 @@
 </head>
 <body>
     <div class="canvas">
-        <div class="answer-container" id="answer"></div>
-        <div class="explanation" id="explanation"></div>
-        <button onclick="showAnswer()">默念问题、寻找答案</button>
+        <div class="raze-container" id="raze"></div>
+        <div class="praise" id="praise"></div>
+        <button onclick="showRaze()">朱海的雷兹</button>
     </div>
 
     <script>
-        const answers = [
-            ["当下困难", "即将解决"],
-            ["心中的她", "即将出现"],
-            ["未知之路", "将有指引"],
-            ["风雨之后", "见彩虹现"],
-            ["迷茫之时", "方向自明"],
-            ["前路漫漫", "坚持就是胜利"],
-            ["黑夜过去", "黎明总会到来"],
-            ["困境之中", "总有出路"],
-            ["孤独一人", "并非无伴"],
-            ["心中疑惑", "真相就在眼前"],
-            ["未来可期", "梦想终会成真"],
-            ["挫折面前", "微笑面对"],
-            ["失败乃成功", "必经之路"],
-            ["勇气前行", "无所畏惧"],
-            ["信念坚定", "目标清晰"],
-            ["希望在远方", "勇敢追寻"],
-            ["挑战多多", "成长迅速"],
-            ["逆境重生", "更加坚强"],
-            ["心怀梦想", "勇往直前"],
-            ["坚持不懈", "成就梦想"]
+        const razes = [
+            ["精准打击", "敌人难逃"],
+            ["火焰风暴", "燃烧一切"],
+            ["快速移动", "无处不在"],
+            ["烟雾弹投掷", "迷惑敌人"],
+            ["爆裂地雷", "致命陷阱"],
+            ["瞬移技能", "神出鬼没"],
+            ["爆炸喷射", "毁灭战场"],
+            ["灵活跳跃", "避开伤害"],
+            ["战术意识", "智胜天下"],
+            ["团队协作", "共战风雨"],
+            ["冷静分析", "决策明智"],
+            ["英勇战斗", "无所畏惧"],
+            ["战术布局", "掌控全场"],
+            ["精确瞄准", "百发百中"],
+            ["灵活应变", "适应变化"],
+            ["超强爆发", "瞬间击杀"],
+            ["持续输出", "压制对手"],
+            ["战术撤退", "保全自己"],
+            ["精准定位", "发现敌人"],
+            ["强大支援", "队友得力"]
         ];
 
-        function getRandomAnswer() {
-            const randomIndex = Math.floor(Math.random() * answers.length);
-            return answers[randomIndex];
+        function getRandomRaze() {
+            const randomIndex = Math.floor(Math.random() * razes.length);
+            return razes[randomIndex];
         }
 
-        function showAnswer() {
-            const answerContainer = document.getElementById('answer');
-            const explanation = document.getElementById('explanation');
-            const [firstLine, secondLine] = getRandomAnswer();
-            answerContainer.textContent = `${firstLine}\n${secondLine}`;
-            explanation.textContent = "遇到问题、犹豫不决时，试试拿走这个简单的答案或暗示。";
+        function showRaze() {
+            const razeContainer = document.getElementById('raze');
+            const praise = document.getElementById('praise');
+            const [firstLine, secondLine] = getRandomRaze();
+            razeContainer.textContent = `${firstLine}\n${secondLine}`;
+            praise.textContent = "遇到问题、犹豫不决时，试试用这个雷兹。";
         }
     </script>
 </body>
